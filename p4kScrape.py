@@ -100,7 +100,7 @@ album_reviews = db['track_reviews_demo']
 entry = getTrackReviews()
 
 count = 0
-for result in entry['list']:
+for result in entry['results']:
     album_reviews.insert_one(result)
     count += 1
     print("Entries added: ", count)
